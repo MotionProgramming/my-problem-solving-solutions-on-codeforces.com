@@ -12,12 +12,13 @@
 using namespace std;
 
 #define endl '\n'
+#define optimize() ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-int main()
-{
+int main() {
+    optimize();
     int n;
     cin >> n;
-
+   
     vector<int> v(n);
 
     for (int i = 0; i < n; i++)
