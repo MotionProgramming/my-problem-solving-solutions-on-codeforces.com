@@ -1,0 +1,37 @@
+//starte the name of Allah
+
+//author : Md Abdullah Rajeb (MotionProgramming)
+//Email  : mdabdullahrajeb90@gmail.com
+// how to optimize the factorial alforithom using recarsunn
+#include <bits/stdc++.h>
+using namespace std;
+ 
+typedef long long ll;
+
+#define MOD 1000000007
+ 
+ll fact (ll n){
+    if(n ==0)return 1;
+    
+    return ((n%MOD) * (fact(n-1)%MOD))%MOD;
+    
+}
+void solve() {
+    ll n;
+    cin >> n;
+   /* ll ans = 1;
+    //mod = 13 n= 6
+    for (int i = 1; i <= n; i++) { 
+        ans *= i;
+        ans %= MOD; 
+    }   //this  part we are implemation reacsive
+    
+    cout << ans << endl;*/
+    cout<<fact(n)<<endl;
+}
+ 
+int main() {
+    optimize();
+    solve();
+    return 0;
+} 
