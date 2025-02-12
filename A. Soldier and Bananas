@@ -1,0 +1,21 @@
+//============================================================================
+//problem link:https://codeforces.com/problemset/problem/546/A
+// Name        :  A. Soldier and Bananas
+// Author      : Md Abdullah Rajeb (MotionProgramming)
+// Version     :
+// Copyright   : use it under your responsibility
+// Description : Hello World in C++, Ansi-style
+//status :accepted
+//============================================================================
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int k,n,w;
+    cin>>k>>n>>w;
+    
+    cout<<max(0,k * (w * (w + 1)) / 2 - n)<<endl;
+    
+    return 0;
+}
